@@ -1,0 +1,223 @@
+/* ===============================
+   GLOBAL BRAND COLOURS
+================================ */
+:root {
+  --yellow-primary: #FFC400;
+  --yellow-dark: #E6AE00;
+  --teal-primary: #089da1;
+  --text-dark: #1F2937;
+  --text-muted: #6B7280;
+  --border-light: #E5E7EB;
+  --bg-light: #F9FAFB;
+}
+
+/* ===============================
+   TRAILERS SECTION
+================================ */
+.trailers {
+  background: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.trailers .title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+/* ===============================
+   TRAILER GRID
+================================ */
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ===============================
+   TRAILER CARD
+================================ */
+.box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 1.8rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: var(--teal-primary);
+}
+
+/* ===============================
+   TRAILER IMAGE
+================================ */
+.box .image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+/* ===============================
+   TRAILER NAME
+================================ */
+.box .name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+/* ===============================
+   TRAILER DETAILS
+================================ */
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.details span {
+  background: #F3F4F6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+}
+
+/* ===============================
+   PRICE
+================================ */
+.price {
+  color: var(--teal-primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+/* ===============================
+   RENTAL DAYS INPUT
+================================ */
+.qty {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.qty:focus {
+  outline: none;
+  border-color: var(--teal-primary);
+}
+
+/* ===============================
+   PRIMARY BUTTON
+================================ */
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--yellow-primary);
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--yellow-dark);
+}
+
+/* ===============================
+   AVAILABILITY BADGE
+================================ */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #22C55E;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+}
+
+.badge.unavailable {
+  background: #EF4444;
+}
+
+/* ===============================
+   HEADER BRANDING
+================================ */
+.logo-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--teal-primary);
+}
+
+.logo-text span {
+  color: var(--yellow-primary);
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar a {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: var(--yellow-primary);
+}
+
+/* ===============================
+   ICON COUNTERS
+================================ */
+.icons span {
+  background: var(--yellow-primary);
+  color: var(--text-dark);
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+}
+
+/* ===============================
+   EMPTY STATE
+================================ */
+.empty {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-muted);
+  padding: 3rem 0;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .trailers {
+    padding: 3rem 1.5rem;
+  }
+
+  .trailers .title {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,13 @@
+# Ignore sensitive files
+DbConn.php
+.env
+
+# Ignore uploads
+uploaded_img/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore vendor folders
+/vendor
