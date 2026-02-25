@@ -47,7 +47,7 @@ if(isset($message)){
 
          <!-- LOGO -->
          <div class="logo">
-            <img src="images/trailerhub-logo.png" alt="Trailer Hub" style="height:90px;">
+            <img src="images/Trailer_img.png" alt="Trailer Hub" style="height:90px;">
          </div>
 
          <a href="home.php" class="logo-text">
